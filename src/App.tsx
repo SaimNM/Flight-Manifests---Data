@@ -91,7 +91,7 @@ export default function App() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         'x-api-key':
-          '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',
+          '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',
         'anthropic-version': '2023-06-01',
         'anthropic-dangerous-direct-browser-access': 'true',
         body: JSON.stringify({
