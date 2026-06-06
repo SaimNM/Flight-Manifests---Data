@@ -118,8 +118,8 @@ export default function App() {
       const parsed: Manifest = JSON.parse(clean);
       setManifests(prev => { const u = [parsed, ...prev]; setActiveManifest(0); return u; });
       setFilterCompany("All");
-    } catch (e) {
-      setError("Failed to parse manifest. Please try again.");
+    } catch (e: any) {
+      setError("Error: " + (e?.message || JSON.stringify(e)));
     }
     setLoading(false);
   }, []);
